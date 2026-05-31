@@ -44,8 +44,14 @@ connectDB();
 const app = express();
 
 // ── Global Middleware ─────────────────────────────────────────────────────────
+app.use(cors({
+  origin: [
+    'https://generic-frontend-eight.vercel.app',
+    'http://localhost:4200',
+  ],
+  credentials: true,
+}));
 app.use(helmet());
-app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
