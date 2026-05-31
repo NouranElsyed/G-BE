@@ -1,0 +1,85 @@
+{
+	"success": 1,
+	"messages": null,
+	"result": {
+		"paging": {
+			"page_title": "العمليات",
+			"page_subtitle": null,
+			"total_items": 8,
+			"start_item": 1,
+			"end_item": 8,
+			"items_per_page": 24,
+			"total_pages": 1,
+			"current_page": 1
+		},
+		"meta_data": [
+			{ "secondary_code": "code",           "name": "الكود",          "icon": null, "order": 1, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "secondaryCode",   "name": "الكود الثانوي",  "icon": null, "order": 2, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "nameCode",        "name": "الاسم",          "icon": null, "order": 3, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "descriptionCode", "name": "الوصف",          "icon": null, "order": 4, "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+			{ "secondary_code": "attachmentId",    "name": "المرفق",         "icon": null, "order": 5, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "createdById",     "name": "أنشئ بواسطة",   "icon": null, "order": 6, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "updatedById",     "name": "عُدِّل بواسطة", "icon": null, "order": 7, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "createdAt",       "name": "تاريخ الإنشاء",  "icon": null, "order": 8, "type": "DATE",   "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "updatedAt",       "name": "تاريخ التعديل",  "icon": null, "order": 9, "type": "DATE",   "is_public": 1,  "enum": null, "lookup": null }
+		],
+		"labels": {
+			"page_title":        "العمليات",
+			"new_button":        "عملية جديدة",
+			"search_placeholder":"بحث في العمليات...",
+			"filter_createdBy":  "أنشئ بواسطة",
+			"filter_attachment": "المرفق",
+			"filter_withAttachment":    "مع مرفق",
+			"filter_withoutAttachment": "بدون مرفق",
+			"col_code":          "الكود",
+			"col_secondaryCode": "الكود الثانوي",
+			"col_name":          "الاسم",
+			"col_description":   "الوصف",
+			"col_createdAt":     "تاريخ الإنشاء",
+			"col_updatedAt":     "تاريخ التعديل",
+			"detail_title":      "تفاصيل العملية",
+			"new_title":         "عملية جديدة",
+			"edit_title":        "تعديل العملية",
+			"code_placeholder":            "مثال: PRC_PROCESS_FAL1",
+			"secondaryCode_placeholder":   "مثال: FAL1",
+			"nameCode_placeholder":        "مثال: PRC_PROCESS_FAL1",
+			"descriptionCode_placeholder": "مثال: PRC_PROCESS_FAL1_DESC",
+			"attached":          "مرفق",
+			"delete_confirm_title":   "تأكيد الحذف",
+			"delete_confirm_message": "هل أنت متأكد من حذف العملية {code}؟",
+			"action_view":   "عرض التفاصيل",
+			"action_edit":   "تعديل",
+			"action_delete": "حذف",
+			"process_names": {
+				"PRC_PROCESS_FAL1":          "FAL 1 — الإعلان العام",
+				"PRC_PROCESS_FAL1_ARRIVAL":  "FAL 1 — الوصول",
+				"PRC_PROCESS_FAL1_DEPARTURE":"FAL 1 — المغادرة",
+				"PRC_PROCESS_CUSCAR":        "CUSCAR — تقرير البضائع الجمركية",
+				"PRC_PROCESS_COPARN":        "COPARN — الإشعار المسبق للحاويات",
+				"PRC_PROCESS_IFTDGN":        "IFTDGN — البضائع الخطرة",
+				"PRC_PROCESS_BAPLIE":        "BAPLIE — مخطط الخليج",
+				"PRC_PROCESS_DESTIM":        "DESTIM — تعليمات التحميل عند المغادرة"
+			},
+			"process_descriptions": {
+				"PRC_PROCESS_FAL1_DESC":          "نموذج IMO FAL 1 — الإعلان العام لوصول ومغادرة السفن.",
+				"PRC_PROCESS_FAL1_ARRIVAL_DESC":  "الإعلان العام المقدَّم عند وصول السفينة.",
+				"PRC_PROCESS_FAL1_DEPARTURE_DESC":"الإعلان العام المقدَّم عند مغادرة السفينة.",
+				"PRC_PROCESS_CUSCAR_DESC":        "رسالة تقرير البضائع الجمركية للاستيراد والتصدير.",
+				"PRC_PROCESS_COPARN_DESC":        "إشعار مسبق للحاويات إلى سلطة الميناء.",
+				"PRC_PROCESS_IFTDGN_DESC":        "إشعار البضائع الخطرة للشحنات الحساسة.",
+				"PRC_PROCESS_BAPLIE_DESC":        "رسالة مخطط الخليج لمواضع تخزين الحاويات.",
+				"PRC_PROCESS_DESTIM_DESC":        "رسالة تعليمات التحميل عند المغادرة."
+			}
+		},
+		"items": [
+			{ "code": "PRC_PROCESS_FAL1",         "secondaryCode": "FAL1",     "nameCode": "PRC_PROCESS_FAL1",         "descriptionCode": "PRC_PROCESS_FAL1_DESC",          "attachmentId": 101, "createdById": 1, "updatedById": 2,    "createdAt": "2026-04-20T10:00:00.000Z", "updatedAt": "2026-05-18T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_FAL1_ARRIVAL",  "secondaryCode": "FAL1-ARR", "nameCode": "PRC_PROCESS_FAL1_ARRIVAL", "descriptionCode": "PRC_PROCESS_FAL1_ARRIVAL_DESC",  "attachmentId": null,"createdById": 1, "updatedById": null, "createdAt": "2026-04-25T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_FAL1_DEPARTURE","secondaryCode": "FAL1-DEP", "nameCode": "PRC_PROCESS_FAL1_DEPARTURE","descriptionCode": "PRC_PROCESS_FAL1_DEPARTURE_DESC","attachmentId": 102, "createdById": 2, "updatedById": 2,    "createdAt": "2026-04-30T10:00:00.000Z", "updatedAt": "2026-05-19T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_CUSCAR",        "secondaryCode": "CUSCAR",   "nameCode": "PRC_PROCESS_CUSCAR",        "descriptionCode": "PRC_PROCESS_CUSCAR_DESC",        "attachmentId": null,"createdById": 3, "updatedById": 1,    "createdAt": "2026-05-05T10:00:00.000Z", "updatedAt": "2026-05-17T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_COPARN",        "secondaryCode": "COPARN",   "nameCode": "PRC_PROCESS_COPARN",        "descriptionCode": "PRC_PROCESS_COPARN_DESC",        "attachmentId": 103, "createdById": 1, "updatedById": null, "createdAt": "2026-05-10T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_IFTDGN",        "secondaryCode": "IFTDGN",   "nameCode": "PRC_PROCESS_IFTDGN",        "descriptionCode": "PRC_PROCESS_IFTDGN_DESC",        "attachmentId": null,"createdById": 2, "updatedById": 3,    "createdAt": "2026-05-12T10:00:00.000Z", "updatedAt": "2026-05-19T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_BAPLIE",        "secondaryCode": "BAPLIE",   "nameCode": "PRC_PROCESS_BAPLIE",        "descriptionCode": "PRC_PROCESS_BAPLIE_DESC",        "attachmentId": 104, "createdById": 3, "updatedById": null, "createdAt": "2026-05-15T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_DESTIM",        "secondaryCode": "DESTIM",   "nameCode": "PRC_PROCESS_DESTIM",        "descriptionCode": "PRC_PROCESS_DESTIM_DESC",        "attachmentId": null,"createdById": 1, "updatedById": 2,    "createdAt": "2026-05-17T10:00:00.000Z", "updatedAt": "2026-05-19T22:00:00.000Z" }
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "result": {
+    "paging": { "page_title": "إجراءات الصلاحية", "page_subtitle": null, "items_per_page": 50 },
+    "meta_data": [
+      { "secondary_code": "perm_key",            "name": "المفتاح",         "icon": null,             "order": 1, "type": "STRING",  "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "perm_code",           "name": "الكود",           "icon": null,             "order": 2, "type": "STRING",  "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_name",           "name": "الصلاحية",        "icon": "pi pi-lock",     "order": 3, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_category",       "name": "التصنيف",         "icon": "pi pi-tag",      "order": 4, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_action",         "name": "الإجراء",         "icon": "pi pi-bolt",     "order": 5, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_status",         "name": "الحالة",          "icon": "pi pi-circle",   "order": 6, "type": "STATUS",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_assigned_roles", "name": "الأدوار المعينة", "icon": "pi pi-users",    "order": 7, "type": "NUMBER",  "is_public": 1,  "enum": null, "lookup": null }
+    ]
+  }
+}

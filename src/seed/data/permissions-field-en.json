@@ -1,0 +1,13 @@
+{
+  "result": {
+    "paging": { "page_title": "Field Permissions", "page_subtitle": null, "items_per_page": 50 },
+    "meta_data": [
+      { "secondary_code": "field_key",    "name": "Key",     "icon": null,           "order": 1, "type": "STRING", "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "field_code",   "name": "Code",    "icon": null,           "order": 2, "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "field_name",   "name": "Field",   "icon": "pi pi-list",   "order": 3, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "field_access", "name": "Access",  "icon": "pi pi-shield", "order": 4, "type": "STRING", "is_public": 1,
+        "enum": ["FULL", "READ", "HIDDEN"], "lookup": null },
+      { "secondary_code": "field_status", "name": "Status",  "icon": "pi pi-circle", "order": 5, "type": "STATUS", "is_public": 1,  "enum": null, "lookup": null }
+    ]
+  }
+}

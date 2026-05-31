@@ -1,0 +1,43 @@
+{
+  "success": 1,
+  "message": { "type": "string", "texts": ["OK"] },
+  "result": {
+    "paging": {
+      "page_title": "المستخدمون",
+      "page_subtitle": null,
+      "total_items": 8,
+      "start_item": 1,
+      "end_item": 8,
+      "items_per_page": 24,
+      "total_pages": 1,
+      "current_page": 1
+    },
+    "meta_data": [
+      { "secondary_code": "id",            "name": "الرقم",           "icon": null,                "order": 1,  "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "username",      "name": "اسم المستخدم",   "icon": "pi pi-at",          "order": 2,  "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "name",          "name": "الاسم",           "icon": "pi pi-user",        "order": 3,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "status",        "name": "الحالة",          "icon": "pi pi-info-circle", "order": 4,  "type": "STATUS", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "email",         "name": "البريد",          "icon": "pi pi-envelope",    "order": 5,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "phone",         "name": "الهاتف",          "icon": "pi pi-phone",       "order": 6,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "role",          "name": "الدور",           "icon": "pi pi-shield",      "order": 7,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "organization",  "name": "الجهة",           "icon": "pi pi-building",    "order": 8,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "createdAt",     "name": "تاريخ الإنشاء",  "icon": "pi pi-info-circle", "order": 9,  "type": "DATE",   "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "updatedAt",     "name": "آخر تحديث",      "icon": "pi pi-info-circle", "order": 10, "type": "DATE",   "is_public": 0,  "enum": null, "lookup": null }
+    ],
+    "labels": {
+      "btn_edit":   "تعديل",
+      "btn_delete": "حذف",
+      "btn_back":   "رجوع"
+    },
+    "items": [
+      { "id": "1", "username": "admin",       "name": "مستخدم النظام", "email": "admin@system.com",        "phone": "01557068541", "role": "مدير",   "status": "غير مفعل", "org_id": 1, "org_name": "وزارة النقل",                  "createdAt": "2026-04-21T00:00:00Z", "updatedAt": "2026-04-21T00:00:00Z" },
+      { "id": "2", "username": "nora.ahmed",  "name": "نورا أحمد",    "email": "nora.ahmed@example.com",  "phone": "01557068541", "role": "مستخدم", "status": "مفعل",     "org_id": 2, "org_name": "هيئة ميناء الإسكندرية",        "createdAt": "2026-04-15T00:00:00Z", "updatedAt": "2026-04-18T00:00:00Z" },
+      { "id": "3", "username": "m.ali",       "name": "محمد علي",      "email": "m.ali@example.com",       "phone": "01557068541", "role": "مستخدم", "status": "غير مفعل", "org_id": 2, "org_name": "هيئة ميناء الإسكندرية",        "createdAt": "2026-04-21T00:00:00Z", "updatedAt": "2026-04-21T00:00:00Z" },
+      { "id": "4", "username": "sara.hassan", "name": "سارة حسن",      "email": "sara.hassan@example.com", "phone": "01557068541", "role": "مشرف",   "status": "مفعل",     "org_id": 3, "org_name": "هيئة ميناء قناة السويس",       "createdAt": "2026-03-10T00:00:00Z", "updatedAt": "2026-04-01T00:00:00Z" },
+      { "id": "5", "username": "omar.k",      "name": "عمر خالد",      "email": "omar.k@example.com",      "phone": "01557068541", "role": "مستخدم", "status": "مفعل",     "org_id": 3, "org_name": "هيئة ميناء قناة السويس",       "createdAt": "2026-03-20T00:00:00Z", "updatedAt": "2026-04-05T00:00:00Z" },
+      { "id": "6", "username": "fatma.y",     "name": "فاطمة يوسف",   "email": "fatma.y@example.com",     "phone": "01557068541", "role": "مدير",   "status": "مفعل",     "org_id": 1, "org_name": "وزارة النقل",                  "createdAt": "2026-02-01T00:00:00Z", "updatedAt": "2026-04-10T00:00:00Z" },
+      { "id": "7", "username": "y.adel",      "name": "يوسف عادل",     "email": "y.adel@example.com",      "phone": "01557068541", "role": "مستخدم", "status": "مفعل",     "org_id": 4, "org_name": "هيئة ميناء دمياط",             "createdAt": "2026-04-01T00:00:00Z", "updatedAt": "2026-04-12T00:00:00Z" },
+      { "id": "8", "username": "mona.samir",  "name": "منى سمير",      "email": "mona.samir@example.com",  "phone": "01557068541", "role": "مشرف",   "status": "مفعل",     "org_id": 4, "org_name": "هيئة ميناء دمياط",             "createdAt": "2026-04-05T00:00:00Z", "updatedAt": "2026-04-20T00:00:00Z" }
+    ]
+  }
+}

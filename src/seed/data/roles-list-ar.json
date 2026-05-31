@@ -1,0 +1,34 @@
+{
+	"success": 1,
+	"messages": null,
+	"result": {
+		"paging": {
+			"page_title": "الأدوار",
+			"page_subtitle": null,
+			"total_items": 5,
+			"start_item": 1,
+			"end_item": 5,
+			"items_per_page": 24,
+			"total_pages": 1,
+			"current_page": 1
+		},
+		"meta_data": [
+			{ "secondary_code": "role_id",           "name": "رقم",              "icon": null, "order": 1,  "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "role_name",          "name": "اسم الدور",        "icon": null, "order": 2,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_category",      "name": "الفئة",            "icon": null, "order": 3,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_community",     "name": "المجتمع",          "icon": null, "order": 4,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_user_count",    "name": "عدد المستخدمين",   "icon": null, "order": 5,  "type": "NUMBER", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_perm_count",    "name": "عدد الصلاحيات",   "icon": null, "order": 6,  "type": "NUMBER", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_status_name",   "name": "الحالة",           "icon": null, "order": 7,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_status_color",  "name": "لون الحالة",       "icon": null, "order": 8,  "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+			{ "secondary_code": "role_updated_at",    "name": "تاريخ التعديل",    "icon": null, "order": 9,  "type": "DATE",   "is_public": 1,  "enum": null, "lookup": null }
+		],
+		"items": [
+			{ "role_id": 1, "role_name": "الدور الأول",   "role_category": "الفئة الإدارية", "role_community": "المجتمع 1", "role_user_count": 750, "role_perm_count": 20, "role_status_name": "مفعل",     "role_status_color": "GREEN", "role_updated_at": "2026-05-01T12:15:00Z" },
+			{ "role_id": 2, "role_name": "الدور الثاني",  "role_category": "الفئة الفنية",   "role_community": "المجتمع 1", "role_user_count": 200, "role_perm_count": 30, "role_status_name": "غير مفعل", "role_status_color": "RED",   "role_updated_at": "2026-04-28T14:40:00Z" },
+			{ "role_id": 3, "role_name": "الدور الثالث",  "role_category": "فئة الدعم",      "role_community": "المجتمع 1", "role_user_count": 352, "role_perm_count": 17, "role_status_name": "غير مفعل", "role_status_color": "RED",   "role_updated_at": "2026-05-03T10:10:00Z" },
+			{ "role_id": 4, "role_name": "الدور الرابع",  "role_category": "الفئة الفنية",   "role_community": "المجتمع 2", "role_user_count": 855, "role_perm_count": 12, "role_status_name": "مفعل",     "role_status_color": "GREEN", "role_updated_at": "2026-05-05T09:00:00Z" },
+			{ "role_id": 5, "role_name": "الدور الخامس",  "role_category": "الفئة الفنية",   "role_community": "المجتمع 2", "role_user_count": 600, "role_perm_count": 7,  "role_status_name": "غير مفعل", "role_status_color": "RED",   "role_updated_at": "2026-05-07T16:25:00Z" }
+		]
+	}
+}

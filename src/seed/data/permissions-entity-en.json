@@ -1,0 +1,15 @@
+{
+  "result": {
+    "paging": { "page_title": "Entities", "page_subtitle": null, "items_per_page": 50 },
+    "meta_data": [
+      { "secondary_code": "entity_key",            "name": "Key",            "icon": null,              "order": 1, "type": "STRING",  "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "entity_code",           "name": "Code",           "icon": null,              "order": 2, "type": "STRING",  "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_name",           "name": "Entity",         "icon": "pi pi-box",       "order": 3, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_category",       "name": "Category",       "icon": "pi pi-tag",       "order": 4, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_status",         "name": "Status",         "icon": "pi pi-circle",    "order": 5, "type": "STATUS",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_assigned_roles", "name": "Assigned Roles", "icon": "pi pi-users",     "order": 6, "type": "NUMBER",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_created_at",     "name": "Created At",     "icon": "pi pi-calendar",  "order": 7, "type": "DATE",    "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_updated_at",     "name": "Updated At",     "icon": "pi pi-calendar",  "order": 8, "type": "DATE",    "is_public": 0,  "enum": null, "lookup": null }
+    ]
+  }
+}

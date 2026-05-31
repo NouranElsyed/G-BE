@@ -1,0 +1,85 @@
+{
+	"success": 1,
+	"message": { "type": "string", "texts": ["OK"] },
+	"result": {
+		"paging": {
+			"page_title": "Processes",
+			"page_subtitle": null,
+			"total_items": 8,
+			"start_item": 1,
+			"end_item": 8,
+			"items_per_page": 24,
+			"total_pages": 1,
+			"current_page": 1
+		},
+		"meta_data": [
+			{ "secondary_code": "code",           "name": "Code",           "icon": null, "order": 1, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "secondaryCode",   "name": "Secondary Code", "icon": null, "order": 2, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "nameCode",        "name": "Name",           "icon": null, "order": 3, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "descriptionCode", "name": "Description",    "icon": null, "order": 4, "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+			{ "secondary_code": "attachmentId",    "name": "Attachment",     "icon": null, "order": 5, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "createdById",     "name": "Created By",     "icon": null, "order": 6, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "updatedById",     "name": "Updated By",     "icon": null, "order": 7, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "createdAt",       "name": "Created At",     "icon": null, "order": 8, "type": "DATE",   "is_public": 1,  "enum": null, "lookup": null },
+			{ "secondary_code": "updatedAt",       "name": "Updated At",     "icon": null, "order": 9, "type": "DATE",   "is_public": 1,  "enum": null, "lookup": null }
+		],
+		"labels": {
+			"page_title":        "Processes",
+			"new_button":        "New Process",
+			"search_placeholder":"Search processes...",
+			"filter_createdBy":  "Created By",
+			"filter_attachment": "Attachment",
+			"filter_withAttachment":    "With Attachment",
+			"filter_withoutAttachment": "Without Attachment",
+			"col_code":          "Code",
+			"col_secondaryCode": "Secondary Code",
+			"col_name":          "Name",
+			"col_description":   "Description",
+			"col_createdAt":     "Created At",
+			"col_updatedAt":     "Updated At",
+			"detail_title":      "Process Details",
+			"new_title":         "New Process",
+			"edit_title":        "Edit Process",
+			"code_placeholder":            "e.g. PRC_PROCESS_FAL1",
+			"secondaryCode_placeholder":   "e.g. FAL1",
+			"nameCode_placeholder":        "e.g. PRC_PROCESS_FAL1",
+			"descriptionCode_placeholder": "e.g. PRC_PROCESS_FAL1_DESC",
+			"attached":          "Attached",
+			"delete_confirm_title":   "Confirm Delete",
+			"delete_confirm_message": "Are you sure you want to delete process {code}?",
+			"action_view":   "View Details",
+			"action_edit":   "Edit",
+			"action_delete": "Delete",
+			"process_names": {
+				"PRC_PROCESS_FAL1":          "FAL 1 — General Declaration",
+				"PRC_PROCESS_FAL1_ARRIVAL":  "FAL 1 — Arrival",
+				"PRC_PROCESS_FAL1_DEPARTURE":"FAL 1 — Departure",
+				"PRC_PROCESS_CUSCAR":        "CUSCAR — Customs Cargo Report",
+				"PRC_PROCESS_COPARN":        "COPARN — Container Pre-Arrival Notice",
+				"PRC_PROCESS_IFTDGN":        "IFTDGN — Dangerous Goods",
+				"PRC_PROCESS_BAPLIE":        "BAPLIE — Bay Plan",
+				"PRC_PROCESS_DESTIM":        "DESTIM — Departure Stowage Instructions"
+			},
+			"process_descriptions": {
+				"PRC_PROCESS_FAL1_DESC":          "IMO FAL Form 1 — General declaration for vessel arrival and departure.",
+				"PRC_PROCESS_FAL1_ARRIVAL_DESC":  "General declaration submitted upon vessel arrival.",
+				"PRC_PROCESS_FAL1_DEPARTURE_DESC":"General declaration submitted upon vessel departure.",
+				"PRC_PROCESS_CUSCAR_DESC":        "Customs cargo report message for imports and exports.",
+				"PRC_PROCESS_COPARN_DESC":        "Container pre-arrival notice to port authority.",
+				"PRC_PROCESS_IFTDGN_DESC":        "Dangerous goods notification for hazardous shipments.",
+				"PRC_PROCESS_BAPLIE_DESC":        "Bay plan message for container stowage positions.",
+				"PRC_PROCESS_DESTIM_DESC":        "Departure stowage instructions message."
+			}
+		},
+		"items": [
+			{ "code": "PRC_PROCESS_FAL1",         "secondaryCode": "FAL1",     "nameCode": "PRC_PROCESS_FAL1",         "descriptionCode": "PRC_PROCESS_FAL1_DESC",          "attachmentId": 101, "createdById": 1, "updatedById": 2,    "createdAt": "2026-04-20T10:00:00.000Z", "updatedAt": "2026-05-18T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_FAL1_ARRIVAL",  "secondaryCode": "FAL1-ARR", "nameCode": "PRC_PROCESS_FAL1_ARRIVAL", "descriptionCode": "PRC_PROCESS_FAL1_ARRIVAL_DESC",  "attachmentId": null,"createdById": 1, "updatedById": null, "createdAt": "2026-04-25T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_FAL1_DEPARTURE","secondaryCode": "FAL1-DEP", "nameCode": "PRC_PROCESS_FAL1_DEPARTURE","descriptionCode": "PRC_PROCESS_FAL1_DEPARTURE_DESC","attachmentId": 102, "createdById": 2, "updatedById": 2,    "createdAt": "2026-04-30T10:00:00.000Z", "updatedAt": "2026-05-19T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_CUSCAR",        "secondaryCode": "CUSCAR",   "nameCode": "PRC_PROCESS_CUSCAR",        "descriptionCode": "PRC_PROCESS_CUSCAR_DESC",        "attachmentId": null,"createdById": 3, "updatedById": 1,    "createdAt": "2026-05-05T10:00:00.000Z", "updatedAt": "2026-05-17T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_COPARN",        "secondaryCode": "COPARN",   "nameCode": "PRC_PROCESS_COPARN",        "descriptionCode": "PRC_PROCESS_COPARN_DESC",        "attachmentId": 103, "createdById": 1, "updatedById": null, "createdAt": "2026-05-10T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_IFTDGN",        "secondaryCode": "IFTDGN",   "nameCode": "PRC_PROCESS_IFTDGN",        "descriptionCode": "PRC_PROCESS_IFTDGN_DESC",        "attachmentId": null,"createdById": 2, "updatedById": 3,    "createdAt": "2026-05-12T10:00:00.000Z", "updatedAt": "2026-05-19T10:00:00.000Z" },
+			{ "code": "PRC_PROCESS_BAPLIE",        "secondaryCode": "BAPLIE",   "nameCode": "PRC_PROCESS_BAPLIE",        "descriptionCode": "PRC_PROCESS_BAPLIE_DESC",        "attachmentId": 104, "createdById": 3, "updatedById": null, "createdAt": "2026-05-15T10:00:00.000Z", "updatedAt": null },
+			{ "code": "PRC_PROCESS_DESTIM",        "secondaryCode": "DESTIM",   "nameCode": "PRC_PROCESS_DESTIM",        "descriptionCode": "PRC_PROCESS_DESTIM_DESC",        "attachmentId": null,"createdById": 1, "updatedById": 2,    "createdAt": "2026-05-17T10:00:00.000Z", "updatedAt": "2026-05-19T22:00:00.000Z" }
+		]
+	}
+}

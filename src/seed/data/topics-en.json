@@ -1,0 +1,55 @@
+{
+  "success": 1,
+  "message": { "type": "string", "texts": ["OK"] },
+  "result": {
+    "paging": {
+      "page_title": "Topics",
+      "page_subtitle": null,
+      "total_items": 27,
+      "start_item": 1,
+      "end_item": 27,
+      "items_per_page": 50,
+      "total_pages": 1,
+      "current_page": 1
+    },
+    "meta_data": [
+      { "secondary_code": "code",        "name": "Code",      "icon": "pi pi-hashtag", "order": 1, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "name",        "name": "Name",      "icon": "pi pi-bookmark","order": 2, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "status",      "name": "Status",     "icon": null,            "order": 3, "type": "STATUS", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "category",    "name": "Category",      "icon": null,            "order": 4, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "domain",      "name": "Domain",     "icon": null,            "order": 5, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "description", "name": "Description",      "icon": null,            "order": 6, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "tags",        "name": "Tags",     "icon": null,            "order": 7, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null }
+    ],
+    "items": [
+      { "code": "VSL_BERTHING",     "name": "Vessel Berthing",              "status": "Active", "category": "Vessels",      "domain": "Marine Operations", "description": "Vessel berthing requests, mooring plans, and berth management operations.",                         "tags": "Berthing request, Berth management, Berth plan, Terminal berth plan modifications" },
+      { "code": "VSL_ARRIVAL",      "name": "Vessel Arrival",               "status": "Active", "category": "Vessels",      "domain": "Marine Operations", "description": "Vessel arrival notifications and expected vs. actual arrival reports.",                            "tags": "Expected vessel arrival, Actual vessel arrival at anchorage statement, Entry request confirmation, Vessel visit information" },
+      { "code": "VSL_DEPARTURE",    "name": "Vessel Departure",             "status": "Active", "category": "Vessels",      "domain": "Marine Operations", "description": "Vessel departure reports including expected and actual, plus time estimates.",                      "tags": "Expected vessel departure statement, Actual vessel departure statement, Vessel departure, Vessel time estimate" },
+      { "code": "VSL_MOVEMENT",     "name": "Vessel Movement",             "status": "Active", "category": "Vessels",      "domain": "Marine Operations", "description": "Vessel movements and position tracking on berths.",                                      "tags": "Vessel movements on berths" },
+      { "code": "VSL_PROFILE",      "name": "Vessel Data",             "status": "Active", "category": "Vessels",      "domain": "Marine Operations", "description": "Data for vessels arriving at the port for the first time and vessel registration.",                            "tags": "Data for vessels arriving at the port for the first time" },
+      { "code": "PRT_CLEARANCE",    "name": "Port Clearances",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Port visit requests, arrival and departure notifications, and exit permits.",                   "tags": "Port visit request, Arrival notification, Departure notification, Departure permit" },
+      { "code": "CNT_STOWAGE",      "name": "Container Stowage",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Container stowage instructions and stowage plan management.",                                     "tags": "Stowage instructions, Vessel stowage plan" },
+      { "code": "CNT_OPERATIONS",   "name": "Container Operations",            "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Advance container notification, discharge and loading orders, and their reports.",                    "tags": "Advance container notification, Container discharge/loading order, Container discharge/loading report" },
+      { "code": "CNT_GATE",         "name": "Container Gate",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Container gate entry/exit operations and tracking.",                                 "tags": "Container gate entry/exit" },
+      { "code": "CNT_RELEASE",      "name": "Container Release",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Processing and management of container release orders.",                                          "tags": "Container release order" },
+      { "code": "CUS_DECLARATION",  "name": "Customs Declaration",          "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Customs declarations, submission, and receipt of customs responses.",                           "tags": "Customs declaration, Customs response" },
+      { "code": "CUS_CARGO",        "name": "Customs Cargo",           "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Customs cargo reports and submission of shipping data.",                                    "tags": "Customs cargo report" },
+      { "code": "TRN_BOOKING",      "name": "Transport Booking",                  "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Transport instructions and booking confirmation processes.",                                             "tags": "Transport instructions, Booking confirmation" },
+      { "code": "TRN_STATUS",       "name": "Transport Status",                 "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Transport status tracking and updates.",                                                     "tags": "Transport status" },
+      { "code": "TRN_SCHEDULE",     "name": "Transport Schedule",                 "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Sailing schedules and vessel voyage planning.",                                              "tags": "Sailing schedule" },
+      { "code": "CRG_DANGEROUS",    "name": "Dangerous Cargo",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Dangerous cargo declaration and notifications.",                                                "tags": "Dangerous cargo declaration, Dangerous cargo notification" },
+      { "code": "CRG_HANDLING",     "name": "Cargo Handling",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Cargo handling and movement operations in the port.",                                       "tags": "Cargo handling and movement" },
+      { "code": "CRG_WEIGHT",       "name": "Cargo Weight",              "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Verified gross mass reports to ensure compliance with cargo weight regulations.",                  "tags": "Verified gross mass" },
+      { "code": "CRG_DESPATCH",     "name": "Cargo Despatch",              "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Despatch advices and cargo delivery management.",                                          "tags": "Despatch advice" },
+      { "code": "CRG_CONSOLIDATION","name": "Cargo Consolidation",              "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Consolidation and shipping summary for consolidated shipments.",                                           "tags": "Consolidation and shipping summary" },
+      { "code": "HSE_HEALTH",       "name": "Maritime Health",              "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Maritime health declarations and health certificates.",                                     "tags": "Maritime health declaration, Health certificate" },
+      { "code": "HSE_ENVIRONMENT",  "name": "Marine Environment",             "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Waste delivery operations and marine environmental protection.",                                   "tags": "Waste delivery receipt" },
+      { "code": "SEC_MARITIME",     "name": "Maritime Security",               "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Maritime security information and ISPS code compliance.",                                   "tags": "Maritime security information" },
+      { "code": "SEC_IMMIGRATION",  "name": "Immigration and Passports",           "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Crew and passenger list management for immigration and passport purposes.",                          "tags": "Crew list, Passenger list, Passenger and crew list" },
+      { "code": "FAL_DECLARATION",  "name": "FAL Declarations",     "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "IMO FAL form declarations to facilitate maritime traffic.",                                 "tags": "General declaration, Cargo declaration, Crew effects declaration" },
+      { "code": "FAL_STORES",       "name": "Ship's Stores",                "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Ship's stores declaration and provisioning management.",                                               "tags": "Ship's stores declaration" },
+      { "code": "EDI_ACKNOWLEDGE",  "name": "EDI Acknowledgment", "status": "Active", "category": "Messages",    "domain": "Marine Operations", "description": "Electronic data interchange receipt acknowledgment and syntax checking reports.",            "tags": "Receipt and error notice, Syntax checking report" },
+      { "code": "PRT_BUNKERING",    "name": "Bunkering",               "status": "Active", "category": "Operations",   "domain": "Marine Operations", "description": "Fuel delivery receipts and vessel bunkering.",                                     "tags": "Fuel delivery receipt" }
+    ]
+  }
+}

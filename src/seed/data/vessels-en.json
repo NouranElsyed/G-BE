@@ -1,0 +1,38 @@
+{
+	"success": 1,
+	"messages": null,
+	"result": {
+		"paging": {
+			"page_title": "Vessels",
+			"page_subtitle": null,
+			"total_items": 6,
+			"start_item": 1,
+			"end_item": 6,
+			"items_per_page": 24,
+			"total_pages": 1,
+			"current_page": 1
+		},
+		"meta_data": [
+			{ "secondary_code": "vessel_id", "name": "Number", "icon": null, "order": 1, "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_name", "name": "Name", "icon": null, "order": 2, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_imo", "name": "IMO", "icon": null, "order": 3, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_call_sign", "name": "Call Sign", "icon": null, "order": 4, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_category_name", "name": "Category", "icon": null, "order": 6, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_type", "name": "Type", "icon": null, "order": 7, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_status_name", "name": "Status", "icon": null, "order": 10, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_status_color", "name": "Status Color", "icon": null, "order": 11, "type": "STRING", "is_public": 0, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_country", "name": "Country Code", "icon": null, "order": 15, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_agency_code", "name": "Agency Code", "icon": null, "order": 20, "type": "NUMBER", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_agency_name", "name": "Agency Name", "icon": null, "order": 21, "type": "STRING", "is_public": 1, "enum": null, "lookup": null },
+			{ "secondary_code": "vessel_updated_at", "name": "Updated At", "icon": null, "order": 25, "type": "DATE", "is_public": 1, "enum": null, "lookup": null }
+		],
+		"items": [
+			{ "vessel_id": 21, "vessel_name": "RUFIYA", "vessel_imo": "9218399", "vessel_call_sign": "H8VI", "vessel_category_name": "Dry Bulk", "vessel_type": 3, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "PA", "vessel_agency_code": "NIL", "vessel_agency_name": "Unknown", "vessel_updated_at": "2026-05-07T15:35:45.807Z" },
+			{ "vessel_id": 23, "vessel_name": "FORTUNE STAR", "vessel_imo": "9436721", "vessel_call_sign": "V7A4506", "vessel_category_name": "Dry Bulk", "vessel_type": 3, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "MH", "vessel_agency_code": "NIL", "vessel_agency_name": "Unknown", "vessel_updated_at": "2026-05-07T15:59:43.781Z" },
+			{ "vessel_id": 24, "vessel_name": "3B SPIRIT", "vessel_imo": "9272565", "vessel_call_sign": "9HA2525", "vessel_category_name": "Liquid Bulk", "vessel_type": 10, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "MT", "vessel_agency_code": "NIL", "vessel_agency_name": "Unknown", "vessel_updated_at": "2026-05-07T16:07:58.759Z" },
+			{ "vessel_id": 22, "vessel_name": "NORD GERANIUM", "vessel_imo": "9670937", "vessel_call_sign": "OWMR2", "vessel_category_name": "Other", "vessel_type": 64, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "DK", "vessel_agency_code": "NIL", "vessel_agency_name": "Unknown", "vessel_updated_at": "2026-05-07T15:46:22.607Z" },
+			{ "vessel_id": 1, "vessel_name": "PAN GG", "vessel_imo": "9236286", "vessel_call_sign": "6BCI", "vessel_category_name": "Container", "vessel_type": 5, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "EG", "vessel_agency_code": "298", "vessel_agency_name": "Fairtrans Navigation Trading & International Transport", "vessel_updated_at": "2026-05-05T07:06:55.121Z" },
+			{ "vessel_id": 2, "vessel_name": "POLSTEAM WELTYN", "vessel_imo": "9984845", "vessel_call_sign": "CQ2270", "vessel_category_name": "General Cargo", "vessel_type": 1, "vessel_status_name": "Active", "vessel_status_color": "GREEN", "vessel_country": "PT", "vessel_agency_code": "72579", "vessel_agency_name": "Sea Scanner Logistics Navigation", "vessel_updated_at": "2026-05-05T07:20:24.938Z" }
+		]
+	}
+}

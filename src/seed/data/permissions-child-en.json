@@ -1,0 +1,14 @@
+{
+  "result": {
+    "paging": { "page_title": "Permission Actions", "page_subtitle": null, "items_per_page": 50 },
+    "meta_data": [
+      { "secondary_code": "perm_key",            "name": "Key",            "icon": null,             "order": 1, "type": "STRING",  "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "perm_code",           "name": "Code",           "icon": null,             "order": 2, "type": "STRING",  "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_name",           "name": "Permission",     "icon": "pi pi-lock",     "order": 3, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_category",       "name": "Category",       "icon": "pi pi-tag",      "order": 4, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_action",         "name": "Action",         "icon": "pi pi-bolt",     "order": 5, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_status",         "name": "Status",         "icon": "pi pi-circle",   "order": 6, "type": "STATUS",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "perm_assigned_roles", "name": "Assigned Roles", "icon": "pi pi-users",    "order": 7, "type": "NUMBER",  "is_public": 1,  "enum": null, "lookup": null }
+    ]
+  }
+}

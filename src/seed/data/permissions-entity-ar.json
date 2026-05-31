@@ -1,0 +1,15 @@
+{
+  "result": {
+    "paging": { "page_title": "الكيانات", "page_subtitle": null, "items_per_page": 50 },
+    "meta_data": [
+      { "secondary_code": "entity_key",            "name": "المفتاح",          "icon": null,              "order": 1, "type": "STRING",  "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "entity_code",           "name": "الكود",            "icon": null,              "order": 2, "type": "STRING",  "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_name",           "name": "الكيان",           "icon": "pi pi-box",       "order": 3, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_category",       "name": "التصنيف",          "icon": "pi pi-tag",       "order": 4, "type": "STRING",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_status",         "name": "الحالة",           "icon": "pi pi-circle",    "order": 5, "type": "STATUS",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_assigned_roles", "name": "الأدوار المعينة",  "icon": "pi pi-users",     "order": 6, "type": "NUMBER",  "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_created_at",     "name": "تاريخ الإنشاء",   "icon": "pi pi-calendar",  "order": 7, "type": "DATE",    "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "entity_updated_at",     "name": "تاريخ التحديث",   "icon": "pi pi-calendar",  "order": 8, "type": "DATE",    "is_public": 0,  "enum": null, "lookup": null }
+    ]
+  }
+}

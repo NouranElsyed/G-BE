@@ -1,0 +1,12 @@
+{
+  "result": {
+    "paging": {
+      "page_title":     "Permissions",
+      "page_subtitle":  null,
+      "items_per_page": 50
+    },
+    "meta_data": [
+      { "secondary_code": "module_name", "name": "Module",  "icon": "pi pi-th-large", "order": 1, "type": "STRING", "is_public": 1, "enum": null, "lookup": null }
+    ]
+  }
+}

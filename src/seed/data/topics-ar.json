@@ -1,0 +1,55 @@
+{
+  "success": 1,
+  "message": { "type": "string", "texts": ["OK"] },
+  "result": {
+    "paging": {
+      "page_title": "الموضوعات",
+      "page_subtitle": null,
+      "total_items": 27,
+      "start_item": 1,
+      "end_item": 27,
+      "items_per_page": 50,
+      "total_pages": 1,
+      "current_page": 1
+    },
+    "meta_data": [
+      { "secondary_code": "code",        "name": "الكود",      "icon": "pi pi-hashtag", "order": 1, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "name",        "name": "الاسم",      "icon": "pi pi-bookmark","order": 2, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "status",      "name": "الحالة",     "icon": null,            "order": 3, "type": "STATUS", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "category",    "name": "الفئة",      "icon": null,            "order": 4, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "domain",      "name": "النطاق",     "icon": null,            "order": 5, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "description", "name": "الوصف",      "icon": null,            "order": 6, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "tags",        "name": "الوسوم",     "icon": null,            "order": 7, "type": "STRING", "is_public": 1,  "enum": null, "lookup": null }
+    ],
+    "items": [
+      { "code": "VSL_BERTHING",     "name": "تراسي السفينة",              "status": "نشطة", "category": "السفن",      "domain": "العمليات البحرية", "description": "طلبات تراسي السفينة وخطط الإرساء وعمليات إدارة الأرصفة.",                         "tags": "طلب تراكى سفينة, إدارة الأرصفة, خطة التراكى, تعديلات خطة التراكى من المحطة" },
+      { "code": "VSL_ARRIVAL",      "name": "وصول السفينة",               "status": "نشطة", "category": "السفن",      "domain": "العمليات البحرية", "description": "إخطارات وصول السفينة وتقارير الوصول المتوقع والفعلي.",                            "tags": "متوقع وصول سفينة, بيان فعلي وصول السفينة للمخطاف, تأكيد طلب الدخول, معلومات زيارة السفينة" },
+      { "code": "VSL_DEPARTURE",    "name": "مغادرة السفينة",             "status": "نشطة", "category": "السفن",      "domain": "العمليات البحرية", "description": "تقارير مغادرة السفينة تشمل المتوقع والفعلي وتقديرات الوقت.",                      "tags": "بيان متوقع مغادرة السفينة, بيان فعلى مغادرة السفينة, مغادرة السفينة, تقدير زمن السفينة" },
+      { "code": "VSL_MOVEMENT",     "name": "تحركات السفينة",             "status": "نشطة", "category": "السفن",      "domain": "العمليات البحرية", "description": "تحركات السفينة وتتبع مواضعها على الأرصفة.",                                      "tags": "تحركات السفينة على الأرصفة" },
+      { "code": "VSL_PROFILE",      "name": "بيانات السفينة",             "status": "نشطة", "category": "السفن",      "domain": "العمليات البحرية", "description": "بيانات السفن القادمة للميناء لأول مرة وتسجيل السفن.",                            "tags": "بيانات السفن القادمة للميناء لأول مرة" },
+      { "code": "PRT_CLEARANCE",    "name": "تصاريح الميناء",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "طلبات زيارة الميناء وإخطارات الوصول والمغادرة وتصاريح الخروج.",                   "tags": "طلب زيارة الميناء, إخطار الوصول, إخطار المغادرة, تصريح المغادرة" },
+      { "code": "CNT_STOWAGE",      "name": "تستيف الحاويات",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "تعليمات تستيف الحاويات وإدارة خطط التستيف.",                                     "tags": "تعليمات التستيف, خطة تستيف السفينة" },
+      { "code": "CNT_OPERATIONS",   "name": "عمليات الحاويات",            "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "الإخطار المسبق بالحاويات وأوامر التفريغ والتحميل وتقاريرها.",                    "tags": "إخطار مسبق بالحاويات, أمر تفريغ/تحميل الحاويات, تقرير تفريغ/تحميل الحاويات" },
+      { "code": "CNT_GATE",         "name": "بوابة الحاويات",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "عمليات دخول وخروج الحاويات من البوابة وتتبعها.",                                 "tags": "دخول/خروج الحاويات من البوابة" },
+      { "code": "CNT_RELEASE",      "name": "إفراج الحاويات",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "معالجة أوامر إفراج الحاويات وإدارتها.",                                          "tags": "أمر إفراج الحاويات" },
+      { "code": "CUS_DECLARATION",  "name": "البيانات الجمركية",          "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "البيانات الجمركية وتقديمها واستقبال الردود الجمركية.",                           "tags": "البيان الجمركي, الرد الجمركي" },
+      { "code": "CUS_CARGO",        "name": "البضائع الجمركية",           "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "تقارير البضائع الجمركية وتقديم بيانات الشحن.",                                    "tags": "تقرير البضائع الجمركي" },
+      { "code": "TRN_BOOKING",      "name": "حجز النقل",                  "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "تعليمات النقل وعمليات تأكيد الحجز.",                                             "tags": "تعليمات النقل, تأكيد الحجز" },
+      { "code": "TRN_STATUS",       "name": "حالة النقل",                 "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "تتبع حالة النقل والتحديثات.",                                                     "tags": "حالة النقل" },
+      { "code": "TRN_SCHEDULE",     "name": "جدول النقل",                 "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "جداول الإبحار وتخطيط رحلات السفن.",                                              "tags": "جدول الإبحار" },
+      { "code": "CRG_DANGEROUS",    "name": "البضائع الخطرة",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "بيان البضائع الخطرة وإخطاراتها.",                                                "tags": "بيان البضائع الخطرة, إخطار البضائع الخطرة" },
+      { "code": "CRG_HANDLING",     "name": "مناولة البضائع",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "عمليات مناولة وتحريك البضائع في الميناء.",                                       "tags": "مناولة وتحريك البضائع" },
+      { "code": "CRG_WEIGHT",       "name": "أوزان البضائع",              "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "تقارير الوزن الإجمالي المعتمد لضمان الامتثال لأوزان البضائع.",                  "tags": "الوزن الإجمالي المعتمد" },
+      { "code": "CRG_DESPATCH",     "name": "إرسال البضائع",              "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "إشعارات الإرسال وإدارة تسليم البضائع.",                                          "tags": "إشعار الإرسال" },
+      { "code": "CRG_CONSOLIDATION","name": "تجميع البضائع",              "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "ملخص التجميع والشحن للشحنات المجمعة.",                                           "tags": "ملخص التجميع والشحن" },
+      { "code": "HSE_HEALTH",       "name": "الصحة البحرية",              "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "الإقرارات الصحية البحرية والشهادات الصحية.",                                     "tags": "الإقرار الصحي البحري, الشهادة الصحية" },
+      { "code": "HSE_ENVIRONMENT",  "name": "البيئة البحرية",             "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "عمليات تسليم النفايات وحماية البيئة البحرية.",                                   "tags": "إيصال تسليم النفايات" },
+      { "code": "SEC_MARITIME",     "name": "الأمن البحري",               "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "معلومات الأمن البحري والامتثال لقواعد ISPS.",                                   "tags": "معلومات الأمن البحري" },
+      { "code": "SEC_IMMIGRATION",  "name": "الهجرة والجوازات",           "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "إدارة قوائم الطاقم والركاب لأغراض الهجرة والجوازات.",                          "tags": "قائمة الطاقم, قائمة الركاب, قائمة الركاب والطاقم" },
+      { "code": "FAL_DECLARATION",  "name": "إقرارات تسهيل الملاحة",     "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "إقرارات نماذج IMO FAL لتسهيل الملاحة البحرية.",                                 "tags": "الإقرار العام, بيان البضائع, بيان متعلقات الطاقم" },
+      { "code": "FAL_STORES",       "name": "مؤن السفينة",                "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "بيان مؤن السفينة وإدارة التموين.",                                               "tags": "بيان مؤن السفينة" },
+      { "code": "EDI_ACKNOWLEDGE",  "name": "تأكيد الاستلام الإلكتروني", "status": "نشطة", "category": "الرسائل",    "domain": "العمليات البحرية", "description": "تأكيد استلام تبادل البيانات الإلكترونية وتقارير التحقق من الصياغة.",            "tags": "إشعار الاستلام والخطأ, تقرير التحقق من الصياغة" },
+      { "code": "PRT_BUNKERING",    "name": "تموين الوقود",               "status": "نشطة", "category": "العمليات",   "domain": "العمليات البحرية", "description": "إيصالات تسليم الوقود وتموين السفن بالوقود.",                                     "tags": "إيصال تسليم الوقود" }
+    ]
+  }
+}

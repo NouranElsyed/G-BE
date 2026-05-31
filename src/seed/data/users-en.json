@@ -1,0 +1,43 @@
+{
+  "success": 1,
+  "message": { "type": "string", "texts": ["OK"] },
+  "result": {
+    "paging": {
+      "page_title": "Users",
+      "page_subtitle": null,
+      "total_items": 8,
+      "start_item": 1,
+      "end_item": 8,
+      "items_per_page": 24,
+      "total_pages": 1,
+      "current_page": 1
+    },
+    "meta_data": [
+      { "secondary_code": "id",            "name": "ID",           "icon": null,                "order": 1,  "type": "NUMBER", "is_public": -1, "enum": null, "lookup": null },
+      { "secondary_code": "username",      "name": "Username",     "icon": "pi pi-at",          "order": 2,  "type": "STRING", "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "name",          "name": "Name",         "icon": "pi pi-user",        "order": 3,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "status",        "name": "Status",       "icon": "pi pi-info-circle", "order": 4,  "type": "STATUS", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "email",         "name": "Email",        "icon": "pi pi-envelope",    "order": 5,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "phone",         "name": "Phone",        "icon": "pi pi-phone",       "order": 6,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "role",          "name": "Role",         "icon": "pi pi-shield",      "order": 7,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "organization",  "name": "Organization", "icon": "pi pi-building",    "order": 8,  "type": "STRING", "is_public": 1,  "enum": null, "lookup": null },
+      { "secondary_code": "createdAt",     "name": "CreatedAt",    "icon": "pi pi-info-circle", "order": 9,  "type": "DATE",   "is_public": 0,  "enum": null, "lookup": null },
+      { "secondary_code": "updatedAt",     "name": "UpdatedAt",    "icon": "pi pi-info-circle", "order": 10, "type": "DATE",   "is_public": 0,  "enum": null, "lookup": null }
+    ],
+    "labels": {
+      "btn_edit":   "Edit",
+      "btn_delete": "Delete",
+      "btn_back":   "Back"
+    },
+    "items": [
+      { "id": "1", "username": "admin",       "name": "Admin User",    "email": "admin@system.com",        "phone": "01557068541", "role": "ADMIN",     "status": "Inactive", "org_id": 1, "org_name": "Ministry of Transport",         "createdAt": "2026-04-21T00:00:00Z", "updatedAt": "2026-04-21T00:00:00Z" },
+      { "id": "2", "username": "nora.ahmed",  "name": "Nora Ahmed",    "email": "nora.ahmed@example.com",  "phone": "01557068541", "role": "USER",      "status": "Active",   "org_id": 2, "org_name": "Alexandria Port Authority",     "createdAt": "2026-04-15T00:00:00Z", "updatedAt": "2026-04-18T00:00:00Z" },
+      { "id": "3", "username": "m.ali",       "name": "Mohamed Ali",   "email": "m.ali@example.com",       "phone": "01557068541", "role": "USER",      "status": "Inactive", "org_id": 2, "org_name": "Alexandria Port Authority",     "createdAt": "2026-04-21T00:00:00Z", "updatedAt": "2026-04-21T00:00:00Z" },
+      { "id": "4", "username": "sara.hassan", "name": "Sara Hassan",   "email": "sara.hassan@example.com", "phone": "01557068541", "role": "MODERATOR", "status": "Active",   "org_id": 3, "org_name": "Suez Canal Port Authority",     "createdAt": "2026-03-10T00:00:00Z", "updatedAt": "2026-04-01T00:00:00Z" },
+      { "id": "5", "username": "omar.k",      "name": "Omar Khaled",   "email": "omar.k@example.com",      "phone": "01557068541", "role": "USER",      "status": "Active",   "org_id": 3, "org_name": "Suez Canal Port Authority",     "createdAt": "2026-03-20T00:00:00Z", "updatedAt": "2026-04-05T00:00:00Z" },
+      { "id": "6", "username": "fatma.y",     "name": "Fatma Youssef", "email": "fatma.y@example.com",     "phone": "01557068541", "role": "ADMIN",     "status": "Active",   "org_id": 1, "org_name": "Ministry of Transport",         "createdAt": "2026-02-01T00:00:00Z", "updatedAt": "2026-04-10T00:00:00Z" },
+      { "id": "7", "username": "y.adel",      "name": "Youssef Adel",  "email": "y.adel@example.com",      "phone": "01557068541", "role": "USER",      "status": "Active",   "org_id": 4, "org_name": "Damietta Port Authority",       "createdAt": "2026-04-01T00:00:00Z", "updatedAt": "2026-04-12T00:00:00Z" },
+      { "id": "8", "username": "mona.samir",  "name": "Mona Samir",    "email": "mona.samir@example.com",  "phone": "01557068541", "role": "MODERATOR", "status": "Active",   "org_id": 4, "org_name": "Damietta Port Authority",       "createdAt": "2026-04-05T00:00:00Z", "updatedAt": "2026-04-20T00:00:00Z" }
+    ]
+  }
+}
