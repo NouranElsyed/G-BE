@@ -10,6 +10,9 @@ const Topic            = require('../models/topic.model');
 const Visit            = require('../models/visit.model');
 const CollectionMeta   = require('../models/collectionMeta.model');
 const PermissionModule = require('../modules/identity/permissions/permission.model');
+const Category         = require('../models/category.model');
+const Contact          = require('../models/contact.model');
+const Organization     = require('../models/organization.model');
 
 const vesselsEn           = require('./data/vessels-en.json');
 const vesselsAr           = require('./data/vessels-ar.json');
@@ -33,6 +36,15 @@ const topicsEn            = require('./data/topics-en.json');
 const topicsAr            = require('./data/topics-ar.json');
 const visitsEn            = require('./data/visits-en.json');
 const visitsAr            = require('./data/visits-ar.json');
+function tryRequire(p) { try { return require(p); } catch (_) { return null; } }
+const categoriesMetaEn    = tryRequire('./data/categories-meta-en.json');
+const categoriesMetaAr    = tryRequire('./data/categories-meta-ar.json');
+const categoriesDocs      = tryRequire('./data/categories.json');
+const contactsDocs        = tryRequire('./data/contacts.json');
+const contactsMetaEn      = tryRequire('./data/contacts-meta-en.json');
+const contactsMetaAr      = tryRequire('./data/contacts-meta-ar.json');
+const organizationsEn     = tryRequire('./data/organizations-en.json');
+const organizationsAr     = tryRequire('./data/organizations-ar.json');
 
 // ══════════════════════════════════════════════════════════════════════════════
 // DB Schema
@@ -168,6 +180,22 @@ async function upsertMeta(collection, lang, data) {
       },
       fields: meta_data,
       labels: labels || {},
+    },
+    { upsert: true, new: true }
+  );
+  log(`meta [${collection}/${lang}] saved`);
+}
+
+// For meta objects that are already in CollectionMeta shape (no .result wrapper)
+async function upsertMetaDirect(collection, lang, meta) {
+  await CollectionMeta.findOneAndUpdate(
+    { collection, lang },
+    {
+      collection,
+      lang,
+      paging:  meta.paging,
+      fields:  meta.fields,
+      labels:  meta.labels || {},
     },
     { upsert: true, new: true }
   );
@@ -354,6 +382,41 @@ function buildPermissionsFromSchema() {
   return Object.values(modulesMap);
 }
 
+function buildOrganizations() {
+  if (!organizationsEn || !organizationsAr) return null;
+  const arMap = makeMap(organizationsAr.result.items, 'id');
+  return organizationsEn.result.items.map(en => {
+    const ar = arMap[en.id] || {};
+    return {
+      ID:             en.id,
+      CODE:           en.code,
+      SECONDARY_CODE: en.secondary_code || null,
+      NAME:           en.name,
+      DESCRIPTION:    en.description    || null,
+      STATUS_ID:      en.status_id,
+      STATUS_CODE:    en.status_code,
+      STATUS_NAME:    en.status_name,
+      STATUS_COLOR:   en.status_color,
+      CATEGORY_ID:    en.category_id,
+      CATEGORY_CODE:  en.category_code,
+      CATEGORY_NAME:  en.category_name,
+      COMMUNITY_ID:   en.community_id,
+      COMMUNITY_CODE: en.community_code,
+      COMMUNITY_NAME: en.community_name,
+      MEDIA_ICON:     en.media_icon  || null,
+      MEDIA_IMAGE:    en.media_image || null,
+      CREATED_BY_ID:  en.created_by_id,
+      CREATED_AT:     en.created_at  ? new Date(en.created_at)  : new Date(),
+      UPDATED_BY_ID:  en.updated_by_id,
+      UPDATED_AT:     en.updated_at  ? new Date(en.updated_at)  : null,
+      i18n: {
+        en: { name: en.name, description: en.description, status_name: en.status_name, category_name: en.category_name, community_name: en.community_name },
+        ar: { name: ar.name, description: ar.description, status_name: ar.status_name, category_name: ar.category_name, community_name: ar.community_name },
+      },
+    };
+  });
+}
+
 // ══════════════════════════════════════════════════════════════════════════════
 // Main
 // ══════════════════════════════════════════════════════════════════════════════
@@ -373,6 +436,9 @@ async function main() {
     drop(Visit,            'Visit'),
     drop(CollectionMeta,   'CollectionMeta'),
     drop(PermissionModule, 'PermissionModule'),
+    drop(Category,         'Category'),
+    drop(Contact,          'Contact'),
+    drop(Organization,     'Organization'),
   ]);
 
   // ── Insert data ───────────────────────────────────────────────────────────
@@ -385,6 +451,13 @@ async function main() {
   await insert(Topic,            buildTopics(),                  'Topics');
   await insert(Visit,            buildVisits(),                  'Visits');
   await insert(PermissionModule, buildPermissionsFromSchema(),   'PermissionModules');
+  if (categoriesDocs) await insert(Category, categoriesDocs, 'Categories');
+  else log('Categories: skipped (no data file)');
+  if (contactsDocs)   await insert(Contact,  contactsDocs,   'Contacts');
+  else log('Contacts:   skipped (no data file)');
+  const orgDocs = buildOrganizations();
+  if (orgDocs)   await insert(Organization, orgDocs, 'Organizations');
+  else log('Organizations: skipped (no data file)');
 
   // ── Save CollectionMeta ───────────────────────────────────────────────────
   console.log('\n🌐 Saving meta_data…');
@@ -410,6 +483,10 @@ async function main() {
   await upsertMeta('permissions_child',  'ar', permissionsChildAr);
   await upsertMeta('permissions_field',  'en', permissionsFieldEn);
   await upsertMeta('permissions_field',  'ar', permissionsFieldAr);
+  if (categoriesMetaEn) await upsertMetaDirect('categories', 'en', categoriesMetaEn);
+  if (categoriesMetaAr) await upsertMetaDirect('categories', 'ar', categoriesMetaAr);
+  if (contactsMetaEn)   await upsertMetaDirect('contacts',   'en', contactsMetaEn);
+  if (contactsMetaAr)   await upsertMetaDirect('contacts',   'ar', contactsMetaAr);
 
   console.log('\n🎉 Seed complete!\n');
   await mongoose.disconnect();

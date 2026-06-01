@@ -15,11 +15,12 @@ function flattenTopic(doc, lang) {
 }
 
 const router = createCrudRouter({
-  collection: 'topics',
-  Model:      Topic,
-  idField:    'code',
-  idType:     'string',
-  flatten:    flattenTopic,
+  collection:  'topics',
+  Model:       Topic,
+  idField:     'code',
+  idType:      'string',
+  normalizeId: (raw) => String(raw).toUpperCase(),
+  flatten:     flattenTopic,
 });
 
 module.exports = router;

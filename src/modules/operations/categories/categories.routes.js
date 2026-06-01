@@ -6,6 +6,7 @@ const router = createCrudRouter({
   Model:      Category,
   idField:    'module_code',
   idType:     'string',
+  normalizeId: (raw) => String(raw).toUpperCase(),
   flatten: (doc) => {
     const { _id, __v, ...rest } = doc;
     return rest;

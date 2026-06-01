@@ -1,0 +1,91 @@
+{
+  "collection": "contacts",
+  "lang": "ar",
+  "paging": {
+    "page_title": "جهات الاتصال",
+    "page_subtitle": null,
+    "items_per_page": 24
+  },
+  "fields": [
+    {
+      "secondary_code": "id",
+      "name": "الرقم",
+      "icon": null,
+      "order": 1,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "name",
+      "name": "الاسم",
+      "icon": "pi pi-user",
+      "order": 2,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "code",
+      "name": "الكود",
+      "icon": null,
+      "order": 3,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "status",
+      "name": "الحالة",
+      "icon": null,
+      "order": 4,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "role",
+      "name": "الدور",
+      "icon": null,
+      "order": 5,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "email",
+      "name": "البريد",
+      "icon": null,
+      "order": 6,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "phone",
+      "name": "الهاتف",
+      "icon": null,
+      "order": 7,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "landline",
+      "name": "الهاتف الأرضي",
+      "icon": null,
+      "order": 8,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    }
+  ]
+}

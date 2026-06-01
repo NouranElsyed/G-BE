@@ -35,6 +35,7 @@ const { ok, created, noContent, notFound, serverError } = require('../response/r
  * @param {Function} [opts.flatten]    - (doc, lang) => plain object
  * @param {Function} [opts.buildFilter]- (req) => mongoose filter object
  * @param {Function} [opts.buildSort]  - (req) => mongoose sort object
+ * @param {Function} [opts.normalizeId]- (raw) => normalized id (overrides idType casting)
  * @returns {express.Router}
  */
 function createCrudRouter(opts) {
@@ -42,10 +43,11 @@ function createCrudRouter(opts) {
     collection,
     Model,
     idField,
-    idType     = 'number',
-    flatten    = (doc) => doc,
+    idType      = 'number',
+    flatten     = (doc) => doc,
     buildFilter = () => ({}),
     buildSort   = () => ({}),
+    normalizeId = null,
   } = opts;
 
   const router = express.Router();
@@ -53,6 +55,7 @@ function createCrudRouter(opts) {
   // ── Helpers ─────────────────────────────────────────────────────────────────
 
   function castId(raw) {
+    if (normalizeId) return normalizeId(raw);
     return idType === 'number' ? Number(raw) : String(raw);
   }
 

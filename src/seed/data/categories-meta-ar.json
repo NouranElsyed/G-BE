@@ -1,0 +1,163 @@
+{
+  "collection": "categories",
+  "lang": "ar",
+  "paging": {
+    "page_title": "التصنيفات",
+    "page_subtitle": "إدارة تصنيفات النظام حسب الوحدة والكيان",
+    "items_per_page": 50
+  },
+  "fields": [
+    {
+      "secondary_code": "category_id",
+      "name": "الرقم",
+      "icon": null,
+      "order": 1,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_code",
+      "name": "الكود",
+      "icon": null,
+      "order": 2,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_name_code",
+      "name": "كود الاسم",
+      "icon": null,
+      "order": 3,
+      "type": "STRING",
+      "is_public": 0,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_name",
+      "name": "الاسم",
+      "icon": null,
+      "order": 4,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_table",
+      "name": "الجدول",
+      "icon": null,
+      "order": 5,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_level",
+      "name": "المستوى",
+      "icon": null,
+      "order": 6,
+      "type": "NUMBER",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_parent_id",
+      "name": "رقم التصنيف الأب",
+      "icon": null,
+      "order": 7,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status_id",
+      "name": "رقم الحالة",
+      "icon": null,
+      "order": 8,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status",
+      "name": "الحالة",
+      "icon": null,
+      "order": 9,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status_color",
+      "name": "لون الحالة",
+      "icon": null,
+      "order": 10,
+      "type": "STRING",
+      "is_public": 0,
+      "enum": [
+        "GREEN",
+        "ORANGE",
+        "RED"
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_is_public",
+      "name": "العرض",
+      "icon": null,
+      "order": 11,
+      "type": "ENUM",
+      "is_public": 1,
+      "enum": [
+        0,
+        1
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_children",
+      "name": "التصنيفات الفرعية",
+      "icon": null,
+      "order": 12,
+      "type": "ARRAY",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_created_at",
+      "name": "تاريخ الإنشاء",
+      "icon": null,
+      "order": 20,
+      "type": "DATE",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_updated_at",
+      "name": "تاريخ التعديل",
+      "icon": null,
+      "order": 21,
+      "type": "DATE",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    }
+  ]
+}

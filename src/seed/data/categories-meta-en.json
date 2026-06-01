@@ -1,0 +1,163 @@
+{
+  "collection": "categories",
+  "lang": "en",
+  "paging": {
+    "page_title": "Categories",
+    "page_subtitle": "Manage system categories by module and entity",
+    "items_per_page": 50
+  },
+  "fields": [
+    {
+      "secondary_code": "category_id",
+      "name": "ID",
+      "icon": null,
+      "order": 1,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_code",
+      "name": "Code",
+      "icon": null,
+      "order": 2,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_name_code",
+      "name": "Name code",
+      "icon": null,
+      "order": 3,
+      "type": "STRING",
+      "is_public": 0,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_name",
+      "name": "Name",
+      "icon": null,
+      "order": 4,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_table",
+      "name": "Table",
+      "icon": null,
+      "order": 5,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_level",
+      "name": "Level",
+      "icon": null,
+      "order": 6,
+      "type": "NUMBER",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_parent_id",
+      "name": "Parent ID",
+      "icon": null,
+      "order": 7,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status_id",
+      "name": "Status ID",
+      "icon": null,
+      "order": 8,
+      "type": "NUMBER",
+      "is_public": -1,
+      "enum": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status",
+      "name": "Status",
+      "icon": null,
+      "order": 9,
+      "type": "STRING",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_status_color",
+      "name": "Status color",
+      "icon": null,
+      "order": 10,
+      "type": "STRING",
+      "is_public": 0,
+      "enum": [
+        "GREEN",
+        "ORANGE",
+        "RED"
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_is_public",
+      "name": "Visibility",
+      "icon": null,
+      "order": 11,
+      "type": "ENUM",
+      "is_public": 1,
+      "enum": [
+        0,
+        1
+      ],
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_children",
+      "name": "Subcategories",
+      "icon": null,
+      "order": 12,
+      "type": "ARRAY",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_created_at",
+      "name": "Created at",
+      "icon": null,
+      "order": 20,
+      "type": "DATE",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    },
+    {
+      "secondary_code": "category_updated_at",
+      "name": "Updated at",
+      "icon": null,
+      "order": 21,
+      "type": "DATE",
+      "is_public": 1,
+      "enum": null,
+      "lookup": null
+    }
+  ]
+}

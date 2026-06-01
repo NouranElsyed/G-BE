@@ -1,0 +1,200 @@
+{
+  "success": 1,
+  "messages": null,
+  "result": {
+    "paging": {
+      "page_title": "Contacts",
+      "page_subtitle": null,
+      "total_items": 10,
+      "start_item": 1,
+      "end_item": 10,
+      "items_per_page": 24,
+      "total_pages": 1,
+      "current_page": 1
+    },
+    "meta_data": [
+      {
+        "secondary_code": "id",
+        "name": "ID",
+        "icon": null,
+        "order": 1,
+        "type": "NUMBER",
+        "is_public": -1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "name",
+        "name": "Name",
+        "icon": "pi pi-user",
+        "order": 2,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "code",
+        "name": "Code",
+        "icon": null,
+        "order": 3,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "status",
+        "name": "Status",
+        "icon": null,
+        "order": 4,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "role",
+        "name": "Role",
+        "icon": null,
+        "order": 5,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "email",
+        "name": "Email",
+        "icon": null,
+        "order": 6,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "phone",
+        "name": "Phone",
+        "icon": null,
+        "order": 7,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      },
+      {
+        "secondary_code": "landline",
+        "name": "Landline",
+        "icon": null,
+        "order": 8,
+        "type": "STRING",
+        "is_public": 1,
+        "enum": null,
+        "lookup": null
+      }
+    ],
+    "items": [
+      {
+        "id": "1",
+        "name": "Organization",
+        "code": "DEFAULT",
+        "email": "organization1@example.com",
+        "phone": "01557068541",
+        "landline": "02-12345678",
+        "role": "Organization",
+        "status": "Active"
+      },
+      {
+        "id": "2",
+        "name": "Branch",
+        "code": "DEFAULT",
+        "email": "branch@example.com",
+        "phone": "01012345678",
+        "landline": "02-12345678",
+        "role": "Branch",
+        "status": "Inactive"
+      },
+      {
+        "id": "3",
+        "name": "Department",
+        "code": "DEFAULT",
+        "email": "department@example.com",
+        "phone": "01198765432",
+        "landline": "02-12345678",
+        "role": "Department",
+        "status": "Active"
+      },
+      {
+        "id": "4",
+        "name": "Unit",
+        "code": "DEFAULT",
+        "email": "unit@example.com",
+        "phone": "01234567890",
+        "landline": "02-12345678",
+        "role": "Unit",
+        "status": "Inactive"
+      },
+      {
+        "id": "5",
+        "name": "Team",
+        "code": "DEFAULT",
+        "email": "team@example.com",
+        "phone": "01511112222",
+        "landline": "02-12345678",
+        "role": "Team",
+        "status": "Active"
+      },
+      {
+        "id": "6",
+        "name": "Manager",
+        "code": "DEFAULT",
+        "email": "manager@example.com",
+        "phone": "01533334444",
+        "landline": "02-12345678",
+        "role": "Manager",
+        "status": "Active"
+      },
+      {
+        "id": "7",
+        "name": "Employee",
+        "code": "DEFAULT",
+        "email": "employee@example.com",
+        "phone": "01555556666",
+        "landline": "02-12345678",
+        "role": "Employee",
+        "status": "Active"
+      },
+      {
+        "id": "8",
+        "name": "Admin",
+        "code": "DEFAULT",
+        "email": "admin@example.com",
+        "phone": "01577778888",
+        "landline": "02-12345678",
+        "role": "Admin",
+        "status": "Inactive"
+      },
+      {
+        "id": "9",
+        "name": "Support",
+        "code": "DEFAULT",
+        "email": "support@example.com",
+        "phone": "01599990000",
+        "landline": "02-12345678",
+        "role": "Support",
+        "status": "Active"
+      },
+      {
+        "id": "10",
+        "name": "Finance",
+        "code": "DEFAULT",
+        "email": "finance@example.com",
+        "phone": "01000001111",
+        "landline": "02-12345678",
+        "role": "Finance",
+        "status": "Active"
+      }
+    ]
+  }
+}

@@ -15,7 +15,7 @@ const FieldMetaSchema = new Schema(
     order:          { type: Number, default: 0     },
     type: {
       type:    String,
-      enum:    ['STRING', 'NUMBER', 'DATE', 'STATUS', 'BOOLEAN'],
+      enum:    ['STRING', 'NUMBER', 'DATE', 'STATUS', 'BOOLEAN', 'ENUM', 'ARRAY'],
       default: 'STRING',
     },
     is_public: {

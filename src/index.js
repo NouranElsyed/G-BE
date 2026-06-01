@@ -46,7 +46,7 @@ const app = express();
 // ── Global Middleware ─────────────────────────────────────────────────────────
 app.use(cors({
   origin: [
-    'https://generic-frontend-zeta.vercel.app/',
+    'https://generic-frontend-zeta.vercel.app',
     'http://localhost:4200',
   ],
   credentials: true,
